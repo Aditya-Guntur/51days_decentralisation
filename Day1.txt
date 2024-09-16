@@ -1,0 +1,14 @@
+Distributed systems
+
+--> Blockchain is a distributed ledger that can be centralized or decentralized. In these, two or more nodes work with each other in a coordinated fashion to achieve a common outcome.
+--> This distributed ledger can have transactions that are valid or not valid. But Word State is the screenshot of the current accepted transactions.
+-->The difference between a distributed ledger and a blockchain is that a distributed ledger does not necessarily consist of blocs of transactions to keep the ledger growing. The fundamental idea here is that, unlike many other blockchains, the records are stored contiguously instead of being sorted into blocks.  An example of a distributed ledger that does not use blocks of transactions is R3's Corda. It's used to record and manage agreements and is especially for the financial industry.
+
+Byzantine Generals problem
+--> Here a group of army generals who lead different parts of the Byzantine army are planning to attack or retreat from a city. The only way of communicating among them is via a messenger they just need to agree to strike at the same time to win. The issue is that one or more generals might be traitors who could send a misleading message.
+
+The same thing can happen in distributed systems where one node can be considered malicious or nonresponsive. These nodes are called Byzantine nodes.
+
+PBFT theory (Practical Byzantine Fault Tolerance
+-->Here there is a consensus reached after a certain number of messages are received containing the same signed contract
+
