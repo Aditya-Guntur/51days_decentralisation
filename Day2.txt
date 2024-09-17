@@ -1,0 +1,25 @@
+Electronic Cash
+--> There are mainly 2 fundamental  cash system issues: accountability and anonymity
+Accountability-- mainly to ensure that there is no double-spending. And that it can only be spent by its rightful owner.
+Anonymity-- is required to protect user's privacy. As with physical cash, it is almost impossible to trace back spending to the individual who paid the money.
+
+
+Solutions
+--> solved by two cryptographic operations called blind signatures and secret sharing.
+Blind signatures allow for signing a document without actually seeing it and secret sharing is a concept that enables the detection of double spending that is using the same e-cash toke twice.
+
+Secret sharing is a cryptographic technique that allows a secret (like a password, cryptographic key, or any sensitive information) to be divided into multiple parts, called shares. These shares are distributed among a group of participants, and the secret can be reconstructed only when a sufficient number of shares are combined together. The main idea behind secret sharing is to enhance security by ensuring that no single participant can access the secret on their own.
+
+Blockchain definition---> It is a peer-to-peer distributed ledger that is cryptographically secure append-only immutable and updateable only via consensus or agreement among peers.
+
+
+Append only
+--> It means that data can only be added to the blockchain in time-ordered sequential order. This means that once data is added to the blockchain, it is impossible to change that data and thus immutable. However, it can be changed in rare scenarios wherein collusion against the blockchain network succeeds in gaining more than 51 percent of the power.  Some reasons to change are to right to be forgotten or the right to erasure that is defined in the General Data Protection Ruling (GDPR).
+
+Genesis Block
+--> The first block in the blockchain that is hardcoded at the time the blockchain was first started.
+
+Merkle Root
+--> Each block in a blockchain consists of transactions. But each of these transactions is further encoded. 
+For example-- say there are 6 transactions 
+. . . . . . Here, these dots represent those transactions. Now, there is a hash value generated using the SHA-256 (Secure Hash Algorithm 256 bit) and this will generate a hash value. Now for each transaction, we have created a hash value. Now we group the 6 transactions in groups of 2 and then find the hash value for the group of transactions. Now we are left with three new dots . . .   Now combine these 3 hashes again create a new hash value and keep doing that till we are left with just one hash value. This hash value is called the Merkle root which is used to represent the entire set of transactions.
